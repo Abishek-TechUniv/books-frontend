@@ -1,7 +1,9 @@
 .Sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #2e3a46;
   width: 6rem;
-  justify-content: flex-start
 }
 
 .Sidebar-home {
@@ -9,6 +11,18 @@
   width: 6rem;
   height: 100px;
   background-color: burlywood;
-  /* background-image: url('../../images/icon.png'); */
   background-size: contain;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 4em;
+}
+
+.Sidebar-lower {
+  display: flex;
+  flex-direction: column;
+}
+
+.Sidebar-icon {
+  font-size: 2em;
+  padding: 25px;
+  color: white;
 }
