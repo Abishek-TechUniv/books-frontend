@@ -10,14 +10,7 @@ class Book extends React.Component {
     this.state = {
       liked: this.props.liked,
     };
-    this.propTypes = {
-      name: PropTypes.string.isRequired,
-      liked: PropTypes.bool.isRequired,
-      key: PropTypes.string.isRequired,
-      bookId: PropTypes.number.isRequired,
-    };
   }
-
 
 
   change = (liked) => {
@@ -52,9 +45,15 @@ class Book extends React.Component {
         </div>
       </div>);
   }
-  
 }
 
-
+Book.propTypes = {
+  name: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
+  liked: PropTypes.bool.isRequired,
+  key: PropTypes.string.isRequired,
+  bookId: PropTypes.number.isRequired,
+};
 
 export default Book;

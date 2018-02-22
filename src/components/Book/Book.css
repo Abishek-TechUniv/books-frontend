@@ -45,12 +45,12 @@ font: bolder
   border-radius: 1.5em;
   margin-left: 110px;
   margin-top: -50px;
-  background: rgb(54, 54, 54);
+  background: rgb(116, 116, 116);
   font-size: 3em;
   cursor: crosshair;
   text-align: center;
 }
 
 .liked {
-  background: rgb(122, 183, 253);
+  background: rgb(229, 26, 18);
 }

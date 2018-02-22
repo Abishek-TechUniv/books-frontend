@@ -11,10 +11,10 @@ const App = () => (
   <div className="App-container">
     <Sidebar />
     <div>
-    <Header>
-      <h2>The <span className="Header-main-text">Book</span> Shelf</h2>
-    </Header>
-    <Content />
+      <Header>
+        <h2>The <span className="Header-main-text">Book</span> Shelf</h2>
+      </Header>
+      <Content />
     </div>
   </div>
 );

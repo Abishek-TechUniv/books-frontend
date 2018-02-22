@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import Book from '../Book';
 
 import './AuthorShelf.css';
@@ -22,5 +22,10 @@ const AuthorShelf = ({ books, author }) => {
       <div className="AuthorShelf-books-list">{createBooks()}</div>
     </div>
   );
+};
+
+AuthorShelf.propTypes = {
+  author: PropTypes.string.isRequired,
+  books: PropTypes.arrayOf(PropTypes.objects).isRequired,
 };
 export default AuthorShelf;
