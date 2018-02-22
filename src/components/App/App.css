@@ -2,7 +2,7 @@ body {
   margin: 0px;
 }
 
-.App-contatiner {
+.App-container {
   font-family: Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
