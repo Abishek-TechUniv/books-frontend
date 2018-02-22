@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+}
+
+.App-contatiner {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: flex-start;
+}
