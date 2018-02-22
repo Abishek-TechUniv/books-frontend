@@ -1,9 +1,12 @@
 .AuthorShelf-books-list {
+  max-width: 1000px;
   display: flex;
   flex-flow: row wrap;
 }
 
 .AuthorShelf-header {
+  padding-left: 20px;
+  padding-top: 20px;
   background: white;
   font-size: 2em;
   font-family: Helvetica, sans-serif;
@@ -12,8 +15,8 @@
 }
 
 .AuthorShelf-container {
-  max-width: 1000px;
   display: flex;
   flex-direction: column;
-  background: rgb(226,125,86)
+  width: 100vw;
+  background: coral;
 }

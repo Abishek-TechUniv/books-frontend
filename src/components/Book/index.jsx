@@ -21,14 +21,27 @@ class Book extends React.Component {
     });
   }
   render() {
+    const imageStyle = {
+      width: '200px',
+      position: 'absolute',
+      clip: 'rect(0px, 200px, 150px, 0px)',
+    };
+    const image = 'https://images-na.ssl-images-amazon.com/images/I/51VNlzbfpXL._SX331_BO1,204,203,200_.jpg';
     return (
-      <div className="Book-container">
-        <div>{this.props.name}</div>
-        <div>{this.props.rating}</div>
-        <div>{this.props.author}</div>
-        <button className={this.state.liked ? 'Book-liked' : 'Book-not-liked'} onClick={() => this.change(this.state.liked)}>+</button>
-      </div>
-    );
+      <div className="card" key={this.props.key}>
+        <img src={image} alt="Avatar" style={imageStyle} />
+        <div className="container">
+          <i
+            className={this.state.liked ? 'material-icons like liked' : 'material-icons like'}
+            onClick={() => this.change(this.state.liked)}
+          >favorite
+          </i>
+          <h4><b>{this.props.name}</b></h4>
+          <p>
+            <span className="rating">{this.props.rating}</span><span className="author">{this.props.author}</span>
+          </p>
+        </div>
+      </div>);
   }
 }
 

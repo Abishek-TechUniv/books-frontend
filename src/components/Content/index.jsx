@@ -19,8 +19,9 @@ class Content extends React.Component {
         booksArr.data.forEach((elem) => {
           if (group[elem.author] === undefined) {
             group[elem.author] = [elem];
+          } else {
+            group[elem.author].push(elem);
           }
-          group[elem.author].push(elem);
         });
         this.setState({ library: group });
       });
@@ -47,8 +48,9 @@ class Content extends React.Component {
         booksArr.data.forEach((elem) => {
           if (group[elem.author] === undefined) {
             group[elem.author] = [elem];
+          } else {
+            group[elem.author].push(elem);
           }
-          group[elem.author].push(elem);
         });
         this.setState({ library: group });
       });

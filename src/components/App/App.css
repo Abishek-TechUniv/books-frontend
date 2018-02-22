@@ -3,9 +3,9 @@ body {
 }
 
 .App-container {
+  min-height: 100vh;
   font-family: Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
-  height: 100vh;
   justify-content: flex-start;
 }
