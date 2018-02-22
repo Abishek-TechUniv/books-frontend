@@ -1,0 +1,19 @@
+.AuthorShelf-books-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.AuthorShelf-header {
+  background: white;
+  font-size: 2em;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  height: 80px;
+}
+
+.AuthorShelf-container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(226,125,86)
+}
