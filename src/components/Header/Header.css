@@ -1,0 +1,16 @@
+.Header-main-text{
+  font-size: 35px;
+  text-decoration: none;
+}
+.Header{
+  background: rgb(148,71,69);
+  padding: 0 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  font-weight: lighter;
+  width: 200px;
+}
+.Header>h2{
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}

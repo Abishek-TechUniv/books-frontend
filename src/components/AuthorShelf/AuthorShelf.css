@@ -1,5 +1,5 @@
 .AuthorShelf-books-list {
-  max-width: 1000px;
+  max-width: 1400px;
   display: flex;
   flex-flow: row wrap;
 }

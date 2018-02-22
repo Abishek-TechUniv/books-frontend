@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 import './Book.css';
 
@@ -9,7 +10,15 @@ class Book extends React.Component {
     this.state = {
       liked: this.props.liked,
     };
+    this.propTypes = {
+      name: PropTypes.string.isRequired,
+      liked: PropTypes.bool.isRequired,
+      key: PropTypes.string.isRequired,
+      bookId: PropTypes.number.isRequired,
+    };
   }
+
+
 
   change = (liked) => {
     const url = `/books/${this.props.bookId}`;
@@ -22,9 +31,9 @@ class Book extends React.Component {
   }
   render() {
     const imageStyle = {
-      width: '200px',
+      width: '250px',
       position: 'absolute',
-      clip: 'rect(0px, 200px, 150px, 0px)',
+      clip: 'rect(0px, 250px,250px, 0px)',
     };
     const image = 'https://images-na.ssl-images-amazon.com/images/I/51VNlzbfpXL._SX331_BO1,204,203,200_.jpg';
     return (
@@ -43,6 +52,9 @@ class Book extends React.Component {
         </div>
       </div>);
   }
+  
 }
+
+
 
 export default Book;
