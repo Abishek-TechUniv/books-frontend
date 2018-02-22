@@ -3,3 +3,11 @@
   height: 200px;
   margin: 20px;
 }
+
+.Book-liked {
+  background: green;
+}
+
+.Book-not-liked {
+  background: red
+}

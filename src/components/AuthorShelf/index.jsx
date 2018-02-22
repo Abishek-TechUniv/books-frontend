@@ -2,7 +2,7 @@ import React from 'react';
 
 import Book from '../Book';
 
-import './AuthorSelf.css';
+import './AuthorShelf.css';
 
 const AuthorShelf = ({ books, author }) => {
   const createBooks = () => books.map(book =>
@@ -10,6 +10,7 @@ const AuthorShelf = ({ books, author }) => {
       img="../../myImg.png"
       key={books.bookId}
       rating={book.rating}
+      bookId={book.bookId}
       name={book.name}
       author={book.author}
       liked={book.liked}
